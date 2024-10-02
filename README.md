@@ -7,9 +7,20 @@ The tool depends on an active OpenAI API key. This can be generated in https://p
 
 Once you have obtained an OpenAI API key, export it in your environment under `OPENAI_API_KEY`
 
+The tool can be installed through pip using either pip or pipx.
+
+```bash
+pip3 install git+https://github.com/DonoA/chatgpt-cli.git
+```
+or
+```bash
+apt install pipx # or brew install pipx
+pipx install git+https://github.com/DonoA/chatgpt-cli.git
+```
+
 Personally, I prefer a smaller prefix for my conversations. I add the following alias to my .zshrc
 
-```
+```bash
 alias gpt='chatgpt'
 ```
 
@@ -89,7 +100,7 @@ You haven't told me your name yet. How can I address you?
 
 ## Developing
 Develop in a venv:
-```
+```bash
 python3 -m venv .
 source bin/activate
 pip3 install -e .
